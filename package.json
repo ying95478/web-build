@@ -1,0 +1,42 @@
+{
+  "name": "web-build",
+  "version": "0.1.0",
+  "description": "a gulp auto build tools",
+  "keywords": [
+    "web-build",
+    "zce"
+  ],
+  "repository": "ying95478/web-build",
+  "license": "MIT",
+  "author": "chenguopeng <18871197643@163.com> (https://github.com/ying95478)",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "jest --coverage",
+    "prepare": "npm run lint && npm run test"
+  },
+  "renovate": {
+    "extends": [
+      "zce"
+    ]
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "26.6.3",
+    "standard": "16.0.3"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
